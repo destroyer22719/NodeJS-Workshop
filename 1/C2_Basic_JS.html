@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    /*variables*/
+    // var myVal = 123;
+    // var myVal = "hello world";
+    // console.log(myVal);
+
+    // let myLet = 123;
+    // let myLet = "hello world";
+    // console.log(myLet);
+
+    // const myConst = "original";
+    // myConst = "changed";
+    // console.log(myConst);
+
+    // function varTest() {
+    //   var x = 1;
+    //   {
+    //     var x = 2;  // same variable!
+    //     console.log(x);  // 2
+    //   }
+    //   console.log(x);  // 2
+    // }
+
+    // function letTest() {
+    //   let x = 1;
+    //   {
+    //     let x = 2;  // different variable
+    //     console.log(x);  // 2
+    //   }
+    //   console.log(x);  // 1
+    // }
+
+
+    /*functions*/
+    // function sayHello (name) {
+    //   console.log("Hello " + name)
+    // }
+
+    // sayHello("Nathan");
+
+    // function addTwoNums (a, b) {
+    //   return a + b; //return stops function execution and gives a value to thte function caller
+    //   console.log("you shouldn't see this")
+    // }
+
+    // const onePlusOne = addTwoNums(1, 1);
+    // const twoPlusTwo = addTwoNums(addTwoNums(1, 1), addTwoNums(1, 1));
+    // console.log(onePlusOne); //2
+    // console.log(twoPlusTwo);
+    
+    /*arrays*/
+    // const myArray = ['a', 'b', 'c'];
+    // console.log("myArray: ", myArray);
+    // console.log("myArray[0]: ", myArray[0]);
+    // console.log("myArray.length: ", myArray.length);
+    // myArray.push('d');
+    // console.log("myArray - after push: ", myArray);
+    // myArray.unshift('z');
+    // console.log("myArray - after unshift: ", myArray);
+    // myArray.pop();
+    // console.log("myArray - after pop(): ", myArray);
+    // myArray.splice(0, 2, '');
+    // console.log("myArray - after splice(): ", myArray);
+
+    /*objects*/
+    // const student = {
+    //   grade: 11,
+    //   school: "Virtual Secondary School",
+    //   courses: ["Math", "Science"],
+    //   funFact: function() {console.log("This is a method of the student object!")}
+    // };
+
+    // student.grades = 78;
+    // console.log(student["grades"]);
+    // console.log(student.grades)
+
+    // student.clubs = ["Computer Club"];
+    // student.clubs.push("Science Club");
+    // console.log(student);
+    // student.funFact();
+
+    /*if/else if/else statements*/
+    // if (1+1 === 0) {
+    //   console.log("1+1 equals 0!");
+    // } else if (1 + 1 === 1) {
+    //   console.log("1+1 equals 1!");
+    // } else {
+    //   console.log("1+1 isn't 0 or 1");
+    // }
+
+    // if (1+1 === 2) {
+    //   console.log("1+1 equals 2!");
+    // }
+
+    // const myVar = "123";
+
+    /*strict equality operator*/
+    // if (myVar === "123") {
+    //   console.log("myVar does equal to string 123!")
+    // }
+    
+    /*equality operator*/
+    // if (myVar == 123) {
+    //   console.log("myVar does equal to number 123!")
+    // }
+
+    //!== operator
+    // if (myVar !== "hello world") {
+    //   console.log("!== operator")
+    // }
+
+    /*using the &&, ||, and (), operator*/
+    // if (myVar === "123" && 2+2 === 4) {
+    //   console.log("using the && operator")
+    // }
+
+    // if (myVar === 123 || 2+2 === 4) {
+    //   console.log("using the || operator")
+    // }
+
+    // if ((2+2 === 4) || (2 + 2 === 5)) {
+    //   console.log("grouping operator")
+    // }
+
+    /* before es6 */
+    // var personObj = {
+    //   name: "Tom",
+    //   school: "Virtual School",
+    //   favFood: "Pizza"
+    // }
+
+    // function greet (name, school, favFood) {
+    //   console.log("hello " + name + " I hope you like going to " + school + "I also see you like " + favFood + "I love it too!");
+    // }
+
+    // greet(personObj.name, personObj.school, personObj.favFood);
+    /* with es6 */
+
+    const personObj = {
+      name: "Tom",
+      school: "Virtual School",
+      favFood: "Pizza"
+    }
+
+    // const {name, school, favFood} = personObj;
+
+    const personArray = ["Tom", "school", "pizza"];
+    // const [name, school, favFood] = personArray
+
+    // const greet = (name, school, favFood) => console.log(`hello ${name} I hope you like going to ${school} I also see that you like ${favFood} I love it too!`)
+    // greet(name, school, favFood);
+
+    // const getNumES5 = function() {
+    //   return Math.random()
+    // };
+
+    // const getNumES5 = function(num) {return num};
+
+    const getNumES6 = () => {
+      return Math.random()
+    };
+    
+    const getNumES6 = num => num;
+
+    console.log(getNumES6());
+    console.log(getNumES5());
+
+    // console.log([...personArray, ...[14, "Bob"]]);
+    // console.log({...personObj, ...{age: 14, bestFriend: "Bob"}});
+
+  </script>
+</body>
+</html>
