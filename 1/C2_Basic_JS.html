@@ -8,10 +8,10 @@
 <body>
   <script>
 
-    /*variables*/
-    // var myVal = 123;
-    // var myVal = "hello world";
-    // console.log(myVal);
+    /*--variables--*/
+    var myVal = 123;
+    var myVal = "hello world";
+    console.log(myVal);
 
     // let myLet = 123;
     // let myLet = "hello world";
@@ -20,6 +20,8 @@
     // const myConst = "original";
     // myConst = "changed";
     // console.log(myConst);
+
+    /*--var vs let and const--*/
 
     // function varTest() {
     //   var x = 1;
@@ -40,7 +42,8 @@
     // }
 
 
-    /*functions*/
+    /*--functions--*/
+
     // function sayHello (name) {
     //   console.log("Hello " + name)
     // }
@@ -57,18 +60,17 @@
     // console.log(onePlusOne); //2
     // console.log(twoPlusTwo);
     
-    /*arrays*/
+    /*--arrays--*/
+
     // const myArray = ['a', 'b', 'c'];
     // console.log("myArray: ", myArray);
     // console.log("myArray[0]: ", myArray[0]);
     // console.log("myArray.length: ", myArray.length);
     // myArray.push('d');
     // console.log("myArray - after push: ", myArray);
-    // myArray.unshift('z');
     // console.log("myArray - after unshift: ", myArray);
     // myArray.pop();
     // console.log("myArray - after pop(): ", myArray);
-    // myArray.splice(0, 2, '');
     // console.log("myArray - after splice(): ", myArray);
 
     /*objects*/
@@ -88,7 +90,8 @@
     // console.log(student);
     // student.funFact();
 
-    /*if/else if/else statements*/
+    /*--if/else if/else statements--*/
+
     // if (1+1 === 0) {
     //   console.log("1+1 equals 0!");
     // } else if (1 + 1 === 1) {
@@ -145,15 +148,15 @@
     // greet(personObj.name, personObj.school, personObj.favFood);
     /* with es6 */
 
-    const personObj = {
-      name: "Tom",
-      school: "Virtual School",
-      favFood: "Pizza"
-    }
+    // const personObj = {
+    //   name: "Tom",
+    //   school: "Virtual School",
+    //   favFood: "Pizza"
+    // }
 
     // const {name, school, favFood} = personObj;
 
-    const personArray = ["Tom", "school", "pizza"];
+    // const personArray = ["Tom", "school", "pizza"];
     // const [name, school, favFood] = personArray
 
     // const greet = (name, school, favFood) => console.log(`hello ${name} I hope you like going to ${school} I also see that you like ${favFood} I love it too!`)
@@ -165,14 +168,14 @@
 
     // const getNumES5 = function(num) {return num};
 
-    const getNumES6 = () => {
-      return Math.random()
-    };
+    // const getNumES6 = () => {
+    //   return Math.random()
+    // };
     
-    const getNumES6 = num => num;
+    // const getNumES6 = num => num;
 
-    console.log(getNumES6());
-    console.log(getNumES5());
+    // console.log(getNumES6());
+    // console.log(getNumES5());
 
     // console.log([...personArray, ...[14, "Bob"]]);
     // console.log({...personObj, ...{age: 14, bestFriend: "Bob"}});
