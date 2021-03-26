@@ -30,3 +30,4 @@ Friday March 19th, 2021
 
 In this week we explored REST APIs and created Create, Read, Update, Delete (CRUD) operations using NodeJS and Express
 
+Link to the [slides](https://docs.google.com/presentation/d/1ZFs45EwycM1XUcDc7_T1gVIjFQQhRLqYuP_WdiGnIq0/edit?usp=sharing)
